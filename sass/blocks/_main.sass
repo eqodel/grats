@@ -1,0 +1,35 @@
+.main
+    &-wrapper
+        display: flex
+        justify-content: space-between
+    &__blocks
+        &-item
+            height: 30rem
+            width: 30rem
+    
+.swiper 
+    width: 100rem
+    height: 80vh
+    margin-right: 12rem
+    &__slide
+        position: relative
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: fill
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 5rem
+      height: 5rem
+      border: none
+      background-color: #000
+      cursor: pointer
+      &--prev
+        left: 0
+      &--next 
+        right: 0
+
+       
