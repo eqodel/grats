@@ -19,15 +19,15 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <div class="header--left">
+                <div class="header-left">
                     <span class="header__town">Москва</span>
                         <a href="#" class="header__gender">Женщинам</a>
                         <a href="#" class="header__gender">Мужчинам</a>
                 </div>
                 <img src="img/GRATS.svg" alt="" class="header__logo">
-                <div class="header--right">
+                <div class="header-right">
                     <div class="header__search">
-                        <input type="text" class="header__search" placeholder="Пароль...">
+                        <input type="text" class="header__search" placeholder="Поиск...">
                         <button type="submit">
                             <img src="img/search-icon.svg" alt="">
                         </button>
@@ -40,9 +40,9 @@
     </header>
     <main class="main">
         <div class="container">
-            <div class="main-wrapper">
+            <div class="main__wrapper">
                     <!-- Slider main container -->
-                <div class="swiper">
+                <div class="swiper main__swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper swiper__wrapper">
                     <!-- Slides -->
@@ -58,26 +58,48 @@
                     </div>
                 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button--prev swiper__button swiper__button--prev">
+                    <div class="swiper__button swiper__button--prev">
                         <img src="img/arrow-left.png" alt="">
                     </div>
-                    <div class="swiper-button--next swiper__button swiper__button--next">
+                    <div class="swiper__button swiper__button--next">
                         <img src="img/arrow-right.png" alt="">
                     </div>
                 
                 </div>
                 <div class="main__blocks">
-                    <div class="main__blocks-item">
-                        <img src="" alt="" class="main__blocks-img">
-                        <span class="main__blocks-description">Как кайфует дава?</span>
-                    </div>
-                    <div class="main__blocks-item">
-                        <img src="" alt="" class="main__blocks-img">
-                        <span class="main__blocks-description">Как кайфует дава?</span>
+                    <div class="infoblocks">
+                        <div class="infoblocks__wrapper">
+                            <div class="infoblocks__item">
+                                <div class="infoblocks__img">
+                                    <img src="img/swiper-img-2.jpg" alt="">
+                                </div>
+                                <p class="infoblocks__description">
+                                    Какое-либо описание товара
+                                </p>
+                            </div>
+                            <div class="infoblocks__item">
+                                <div class="infoblocks__img">
+                                    <img src="img/swiper-img-2.jpg" alt="">
+                                </div>
+                                <p class="infoblocks__description">
+                                    Какое-либо описание товара
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <section class="clothes">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="clothes__title">Новые шмотки</h2>
+            </div>
+            <div class="clothes__items">
+                
+            </div>
+        </div>
+    </section>
 </body>
 </html>

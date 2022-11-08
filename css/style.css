@@ -48,7 +48,7 @@ input::-webkit-input-placeholder {
 }
 
 .container {
-  max-width: 168rem;
+  max-width: 138.5rem;
   margin: 0 auto;
 }
 
@@ -73,7 +73,7 @@ input::-webkit-input-placeholder {
           align-items: center;
 }
 
-.header--left {
+.header-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +106,7 @@ input::-webkit-input-placeholder {
   height: 3.6rem;
 }
 
-.header--right {
+.header-right {
   margin-left: 15rem;
   width: 43.5rem;
   display: -webkit-box;
@@ -139,23 +139,28 @@ input::-webkit-input-placeholder {
   right: 0;
 }
 
-.main-wrapper {
+.main__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  height: 60rem;
 }
 
-.main__blocks-item {
-  height: 30rem;
-  width: 30rem;
-}
-
-.swiper {
+.main__swiper {
   width: 100rem;
-  height: 80vh;
+  height: 100%;
+  margin-left: 0;
+}
+
+.main__blocks {
+  height: 100%;
+}
+
+.swiper__wrapper {
   margin-right: 12rem;
 }
 
@@ -164,10 +169,12 @@ input::-webkit-input-placeholder {
 }
 
 .swiper__img {
+  max-width: 100%;
   height: 100%;
-  width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 .swiper__button {
@@ -179,7 +186,6 @@ input::-webkit-input-placeholder {
   width: 5rem;
   height: 5rem;
   border: none;
-  background-color: #000;
   cursor: pointer;
 }
 
@@ -189,5 +195,52 @@ input::-webkit-input-placeholder {
 
 .swiper__button--next {
   right: 0;
+}
+
+.infoblocks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60rem;
+}
+
+.infoblocks__item {
+  width: 28.3rem;
+  height: 28rem;
+}
+
+.infoblocks__description {
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+}
+
+.clothes__title {
+  margin: 0 auto;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  line-height: 5.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  width: 37rem;
+}
+
+.clothes__title::after {
+  content: '';
+  width: 31.1rem;
+  height: 0.15rem;
+  background-color: #000;
+  position: absolute;
+  left: 8%;
+  bottom: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
