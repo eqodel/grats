@@ -243,4 +243,26 @@ input::-webkit-input-placeholder {
   left: 8%;
   bottom: 0.5rem;
 }
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.products__item {
+  width: 60rem;
+  height: 66.6rem;
+}
+
+.products__description {
+  font-size: 3.5rem;
+  line-height: 3.9rem;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
