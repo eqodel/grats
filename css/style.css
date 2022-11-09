@@ -1,11 +1,10 @@
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
   font-size: 0.625rem;
-  font-family: 'Forum', cursive;
+  font-family: "Forum", cursive;
   font-weight: normal;
 }
 
@@ -19,8 +18,7 @@ img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 ul {
@@ -54,69 +52,44 @@ input::-webkit-input-placeholder {
 
 .header {
   background-color: #D9D9D9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 2.6rem 0;
   margin-bottom: 3rem;
 }
-
 .header-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 50rem;
   font-size: 2.5rem;
   line-height: 2.8rem;
   margin-right: 14rem;
 }
-
 .header__town {
   font-size: 3.5rem;
   line-height: 3.9rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
-
 .header__logo {
   width: 16rem;
   height: 6.6rem;
 }
-
 .header__icon {
   width: 3.6rem;
   height: 3.6rem;
 }
-
 .header-right {
   margin-left: 15rem;
   width: 43.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .header__search {
   width: 28.3rem;
   height: 3.4rem;
@@ -124,38 +97,28 @@ input::-webkit-input-placeholder {
   border-radius: 0.5rem;
   font-size: 2rem;
   cursor: text;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
-
 .header__search input {
   border: 0.1rem solid #000;
 }
-
 .header__search button {
   position: absolute;
   right: 0;
 }
 
 .main__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   height: 60rem;
 }
-
 .main__swiper {
   width: 100rem;
   height: 100%;
   margin-left: 0;
 }
-
 .main__blocks {
   height: 100%;
 }
@@ -163,11 +126,9 @@ input::-webkit-input-placeholder {
 .swiper__wrapper {
   margin-right: 12rem;
 }
-
 .swiper__slide {
   position: relative;
 }
-
 .swiper__img {
   max-width: 100%;
   height: 100%;
@@ -176,46 +137,33 @@ input::-webkit-input-placeholder {
   -o-object-position: top center;
      object-position: top center;
 }
-
 .swiper__button {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 99;
   width: 5rem;
   height: 5rem;
   border: none;
   cursor: pointer;
 }
-
 .swiper__button--prev {
   left: 0;
 }
-
 .swiper__button--next {
   right: 0;
 }
 
 .infoblocks__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 60rem;
 }
-
 .infoblocks__item {
   width: 28.3rem;
   height: 28rem;
 }
-
 .infoblocks__description {
   margin-top: 0.2rem;
   font-size: 1.6rem;
@@ -233,9 +181,8 @@ input::-webkit-input-placeholder {
   position: relative;
   width: 37rem;
 }
-
 .clothes__title::after {
-  content: '';
+  content: "";
   width: 31.1rem;
   height: 0.15rem;
   background-color: #000;
@@ -245,19 +192,13 @@ input::-webkit-input-placeholder {
 }
 
 .products {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .products__item {
   width: 60rem;
   height: 66.6rem;
 }
-
 .products__description {
   font-size: 3.5rem;
   line-height: 3.9rem;
@@ -265,4 +206,32 @@ input::-webkit-input-placeholder {
   text-align: center;
   text-transform: uppercase;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 100rem;
+  }
+  .header-left {
+    margin-right: 0;
+  }
+  .header__town {
+    letter-spacing: 0;
+    font-size: 3rem;
+  }
+  .header-right {
+    margin-left: 0;
+  }
+  .header__logo {
+    margin: 0 5rem;
+  }
+  .header__search {
+    width: 23rem;
+  }
+  .main__swiper {
+    width: 68rem;
+    height: 50rem;
+  }
+  .infoblocks {
+    height: 50rem;
+  }
+}/*# sourceMappingURL=style.css.map */
