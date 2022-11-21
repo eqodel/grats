@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/userModal.js" defer></script>
+    <script src="js/slider.js" defer></script>
     <title>GRATS</title>
 </head>
 <body>
@@ -21,8 +22,8 @@
             <div class="header-wrapper">
                 <div class="header-left">
                     <span class="header__town">Москва</span>
-                        <a href="#" class="header__gender">Женщинам</a>
-                        <a href="#" class="header__gender">Мужчинам</a>
+                        <a href="#" class="header__gender underline-from-center">Женщинам</a>
+                        <a href="#" class="header__gender underline-from-center">Мужчинам</a>
                 </div>
                 <img src="img/GRATS.svg" alt="" class="header__logo">
                 <div class="header-right">
@@ -32,8 +33,8 @@
                             <img src="img/search-icon.svg" alt="">
                         </button>
                     </div>
-                    <a href="#"><img class="header__icon" src="img/basket-icon.svg" alt=""></a>
-                    <a href="#"><img class="header__icon" src="img/acc-icon.svg" alt=""></a>
+                    <a href="#" class="header__icon" id="basket"><img src="img/basket-icon.svg" alt=""></a>
+                    <a href="#" class="header__icon" id="user"><img src="img/acc-icon.svg" alt=""></a>
                     
                 </div>
                 <button class="menu header__menu">
@@ -97,10 +98,29 @@
             </div>
         </div>
     </main>
+    <section class="category">
+        <div class="container">
+            <h2 class="category__title section__title">Выберите категорию</h2>
+            <div class="categories category__links">
+                <div class="categories__item">
+                    <h3 class="categories__title">Мужское</h3>
+                    <a href="#">
+                        <img class="categories__img" src="img/categories-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="categories__item">
+                    <h3 class="categories__title">Женское</h3>
+                    <a href="#">
+                        <img class="categories__img" src="img/categories-2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="clothes">
         <div class="container">
             <div class="title-wrapper">
-                <h2 class="clothes__title">Новые шмотки</h2>
+                <h2 class="clothes__title section__title">Новые шмотки</h2>
             </div>
             <div class="clothes__items">
                 <div class="products clothes__products">
@@ -120,5 +140,37 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__links">
+                <div class="footer-text">
+                    <div class="footer-text__item">
+                        <div class="footer-text__title">
+                            <h3>Контакты</h3>
+                        </div>
+                        <div class="footer-text__link"><a class="grow" href="#">Новости</a></div>
+                        <div class="footer-text__link"><a class="grow" href="#">О нас</a></div>
+                        <div class="footer-text__link"><a class="grow" href="#">Обратная связь</a></div>
+                    </div>
+                    <div class="footer-text__item">
+                        <div class="footer-text__title">
+                            <h3>Бренды</h3>
+                        </div>
+                        <div class="footer-text__link"><a class="grow" href="#">Nike</a></div>
+                        <div class="footer-text__link"><a class="grow" href="#">Adidas</a></div>
+                        <div class="footer-text__link"><a class="grow" href="#">New balance</a></div>
+                    </div>
+                    <div class="footer-text__item">
+                        <div class="footer-text__title">
+                            <h3>Магазин</h3>
+                        </div>
+                        <div class="footer-text__link"><a class="grow" href="#">Кроссовки</a></div>
+                        <div class="footer-text__link"><a class="grow" href="#">Худи</a></div>
+                        <div class="footer-text__link"><a class="grow" href="#">Брюки</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
