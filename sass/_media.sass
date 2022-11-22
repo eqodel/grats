@@ -32,6 +32,19 @@
         &__description
             font-size: 2.5rem
 
+    .category
+        &__links
+            height: 70rem
+
+    .categories
+        &__item
+            width: 40rem
+            height: 52rem
+        &__title
+            font-size: 4rem
+        
+
+
 
 @media (max-width: 1000px)
     .container
@@ -73,6 +86,16 @@
         &__item
             height: auto
 
+    .category
+        &__links
+            height: 50rem
+
+
+    .categories
+        &__item
+            width: 34rem
+            height: 39rem
+
 @media (max-width: 800px)
     .container 
         max-width: 88%
@@ -91,4 +114,21 @@
             width: 100%
         &__description
             font-size: 4rem
+
+    .section
+        &__title
+            width: auto
+        &__title::after
+            display: none
+
+    .categories
+        &__item
+            width: 49%
+            height: 29rem
+
+    .footer
+        &-text
+            &__item
+                font-size: 2rem
+            
             
