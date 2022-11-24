@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/userModal.js" defer></script>
+    <script src="js/registrationModal.js" defer></script>
     <script src="js/slider.js" defer></script>
     <title>GRATS</title>
 </head>
@@ -196,12 +197,34 @@
                     Запомнить меня
                 
             </label>
-            <div class="modal__button modal__button--login">
-                <button>Войти</button>
+            <div>
+                <button class="modal__button modal__button--login">Войти</button>
             </div>
             <span class="modal__newacc">Новый пользователь?</span>
-            <div class="modal__button modal__button--reg">
-                <button>Зарегестрироваться</button>
+            <div>
+                <button class="modal__button" id="login-reg">Зарегестрироваться</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal__registration">
+        <div class="modal-overlay">
+
+        </div>
+        <div class="modal__wrapper">
+            <div>
+                <h4 class="modal__title">Регистрация</h4>
+            </div>
+            <div class="modal__input">
+                <input type="text" placeholder="Email...">
+            </div>
+            <div class="modal__input">
+                <input type="text" placeholder="Пароль...">
+            </div>
+            <div class="modal__input">
+                <input type="text" placeholder="Подтвердите пароль...">
+            </div>
+            <div>
+                <button class="modal__button modal__button--reg">Региcтрация</button>
             </div>
         </div>
     </div>
