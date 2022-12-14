@@ -450,8 +450,8 @@ label input {
   padding: 0;
   display: none;
   position: absolute;
-  top: 1.5rem;
-  right: -5rem;
+  top: 2.75rem;
+  right: -3rem;
 }
 .menu__item {
   width: 2rem;
@@ -521,6 +521,7 @@ label input {
     left: 0;
     right: 0;
     z-index: 99;
+    padding: 3.5rem 0;
   }
   .header-wrapper {
     flex-direction: row-reverse;
@@ -541,6 +542,7 @@ label input {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 13rem;
   }
   .main__wrapper {
     height: 50rem;
