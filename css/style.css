@@ -433,7 +433,7 @@ label input {
   flex-direction: column;
   justify-content: space-around;
   height: 30rem;
-  margin-top: 4rem;
+  margin: 4rem 0 0 2rem;
 }
 
 .nav {
