@@ -13,12 +13,27 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/userModal.js" defer></script>
+    <script src="js/menuModal.js" defer></script>
     <script src="js/registrationModal.js" defer></script>
     <script src="js/slider.js" defer></script>
     <title>GRATS</title>
 </head>
 <body>
     <header class="header">
+        <div class="mobile-menu">
+            <button class="menu mobile-menu__btn">
+                <span class="menu__item"></span>
+                <span class="menu__item"></span>
+                <span class="menu__item"></span>
+            </button>
+            <nav class="nav mobile-menu__nav">
+                <a href="#" class="nav__item nav__gender">Мужчинам</a>
+                <a href="#" class="nav__item nav__gender">Женщинам</a>
+                <a href="#" class="nav__item">Новинки</a>
+                <a href="#" class="nav__item">Одежда</a>
+                <a href="#" class="nav__item">Обуви</a>
+            </nav>
+        </div>
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-left">
@@ -27,7 +42,7 @@
                         <a href="#" class="header__gender underline-from-center grow">Мужчинам</a>
                 </div>
                 <img src="img/GRATS.svg" alt="" class="header__logo">
-                <div class="header-right">
+                <div class="header-right header-right--mobile">
                     <div class="header__search">
                         <input type="text" class="header__search" placeholder="Поиск...">
                         <button type="submit">
@@ -38,11 +53,7 @@
                     <a href="#" class="header__icon" id="user"><img src="img/acc-icon.svg" alt=""></a>
                     
                 </div>
-                <button class="menu header__menu">
-                    <span class="menu__item"></span>
-                    <span class="menu__item"></span>
-                    <span class="menu__item"></span>
-                </button>
+                
             </div>
         </div>
     </header>
@@ -174,9 +185,6 @@
         </div>
     </footer>
     <div class="modal">
-        <div class="modal-overlay">
-
-        </div>
         <div class="modal__wrapper">
             <div>
                 <h4 class="modal__title">Уже зарегестрированы?</h4>
@@ -205,6 +213,9 @@
                 <button class="modal__button" id="login-reg">Зарегестрироваться</button>
             </div>
         </div>
+    </div>
+    <div class="modal-overlay">
+
     </div>
     <div class="modal modal__registration">
         <div class="modal-overlay">

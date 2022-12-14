@@ -57,6 +57,8 @@
         left: 0
         right: 0
         z-index: 99
+        &-wrapper
+            flex-direction: row-reverse
         &-left
             display: none
         &__icon
@@ -70,9 +72,6 @@
             position: absolute
             left: 50%
             transform: translate(-50%, 0)
-        &__menu
-            display: flex
-            order: 3
 
     .main
         &__wrapper
@@ -95,6 +94,9 @@
         &__item
             width: 34rem
             height: 39rem
+
+    .menu
+        display: flex
 
 @media (max-width: 800px)
     .container 
