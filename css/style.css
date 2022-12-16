@@ -463,6 +463,10 @@ label input {
   transform: translateX(0%);
 }
 
+.body--active {
+  overflow: hidden;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 100rem;
