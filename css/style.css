@@ -462,6 +462,9 @@ label input {
 .menu--active {
   transform: translateX(0%);
 }
+.menu--hidden {
+  visibility: hidden;
+}
 
 .body--active {
   overflow: hidden;
