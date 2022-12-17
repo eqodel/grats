@@ -15,14 +15,10 @@ function touchStart (event) {
 }
 
 function touchMove (event) {
-    if (!x1) {
-        return false;
-    }
-
     let x2 = event.touches[0].clientX;
 
     let xDiff = x2 - x1;
     
-    if (Math.abs(xDiff > 0)) menu.style.transform = 'translateX(0%)'
-    else menu.style.transform = 'translateX(-100%)'
+    if (Math.abs(xDiff > 0)) menu.style.transform = 'translateX(0%)', menu.style.opacity = '1'
+    else menu.style.transform = 'translateX(-95%)', menu.style.opacity = '0'
 }

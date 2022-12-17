@@ -426,7 +426,8 @@ label input {
   position: fixed;
   z-index: 99;
   transition: 1s;
-  transform: translateX(-100%);
+  transform: translateX(-99%);
+  opacity: 0;
 }
 .mobile-menu__nav {
   display: flex;
