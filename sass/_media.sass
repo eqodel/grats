@@ -81,7 +81,7 @@
 
     .clothes
         &__title
-            margin-top: 5rem
+            margin-top: 10rem
 
     .products
         &__item
@@ -127,8 +127,16 @@
 
     .categories
         &__item
-            width: 49%
-            height: 29rem
+            width: 100%
+            height: 30rem
+            margin-top: 10rem
+        &__item:first-child
+            margin-top: 0
+
+    .category
+        &__links
+            flex-direction: column
+            height: auto
 
     .footer
         &-text

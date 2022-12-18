@@ -20,5 +20,5 @@ function touchMove (event) {
     let xDiff = x2 - x1;
     
     if (Math.abs(xDiff > 0)) menu.style.transform = 'translateX(0%)', menu.style.opacity = '1'
-    else menu.style.transform = 'translateX(-95%)', menu.style.opacity = '0'
+    else menu.style.transform = 'translateX(-90%)', menu.style.opacity = '0'
 }
