@@ -119,6 +119,7 @@ input {
   display: flex;
   padding: 2.6rem 0;
   margin-bottom: 3rem;
+  position: relative;
 }
 .header-wrapper {
   display: flex;
@@ -174,6 +175,25 @@ input {
 .header__search::-webkit-input-placeholder {
   color: #000;
 }
+.header__dropdown {
+  width: 41rem;
+  height: 16rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-2%, 75%);
+  z-index: 99;
+  font-size: 1.8rem;
+}
+.header__gender {
+  line-height: 4rem;
+}
+
 .menu__item {
   width: 2rem;
   height: 0.1rem;
@@ -426,8 +446,9 @@ label input {
   position: fixed;
   z-index: 99;
   transition: 1s;
-  transform: translateX(-90%);
+  transform: translateX(-80%);
   opacity: 0;
+  display: none;
 }
 .mobile-menu__nav {
   display: flex;
@@ -569,6 +590,9 @@ label input {
     height: 39rem;
   }
   .menu {
+    display: flex;
+  }
+  .mobile-menu {
     display: flex;
   }
 }

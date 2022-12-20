@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/hammer.min.js"></script>
     <script src="js/userModal.js" defer></script>
     <script src="js/menuModal.js" defer></script>
+    <script src="js/dropDownLinks.js" defer></script>
     <script src="js/registrationModal.js" defer></script>
     <script src="js/slider.js" defer></script>
     <title>GRATS</title>
@@ -39,8 +39,22 @@
             <div class="header-wrapper">
                 <div class="header-left">
                     <span class="header__town">Москва</span>
-                        <a href="#" class="header__gender underline-from-center grow">Женщинам</a>
-                        <a href="#" class="header__gender underline-from-center grow">Мужчинам</a>
+                        <div class="dropdown__wrapper dropdown__wrapper--woman">
+                            <a href="#" class="header__gender grow">Женщинам</a>
+                            <div class="header__dropdown dropdown--woman">
+                                <a href="#" class="dropdown__link">Кроссовки</a>
+                                <a href="#" class="dropdown__link">Худи</a>
+                                <a href="#" class="dropdown__link">Брюки</a>
+                            </div>
+                        </div>
+                        <div class="dropdown__wrapper dropdown__wrapper--man">
+                            <a href="#" class="header__gender grow">Мужчинам</a>
+                            <div class="header__dropdown dropdown--man">
+                                <a href="#" class="dropdown__link">Кроссовки</a>
+                                <a href="#" class="dropdown__link">Худи</a>
+                                <a href="#" class="dropdown__link">Брюки</a>
+                            </div>
+                        </div>
                 </div>
                 <img src="img/GRATS.svg" alt="" class="header__logo">
                 <div class="header-right header-right--mobile">
@@ -54,7 +68,6 @@
                     <a href="#" class="header__icon" id="user"><img src="img/acc-icon.svg" alt=""></a>
                     
                 </div>
-                
             </div>
         </div>
     </header>
@@ -123,7 +136,7 @@
                 </div>
                 <div class="categories__item">
                     <h3 class="categories__title">Женское</h3>
-                    <a href="#" class="categories__img">
+                    <a href="#" class="categories__img" >
                         <img src="img/categories-2.jpg" alt="">
                     </a>
                 </div>
